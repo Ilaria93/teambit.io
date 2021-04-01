@@ -380,8 +380,40 @@ template {
   margin: auto;
 }
 
+.jumbo a .fa-arrow-right,
+.jumbo .btn-log img,
 .btn-log img {
   vertical-align: middle;
+}
+
+.get-start,
+.feedback {
+  margin: 100px auto;
+}
+
+.get-start .get-start-left h3,
+.feedback .feed-right h3 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.get-start .get-start-left p,
+.feedback .feed-right p {
+  font-size: 22px;
+}
+
+.get-start .get-start-left a,
+.feedback .feed-right a {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+.get-start .get-start-left img,
+.feedback .feed-right img {
+  max-width: 35%;
+  padding: 40px;
+  display: block;
 }
 
 .navbar {
@@ -477,7 +509,9 @@ template {
 
 .wrapper {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 90px 0;
 }
 
@@ -496,7 +530,6 @@ template {
 
 .jumbo p {
   color: #58402c;
-  font-family: "Montserrat", sans-serif;
   line-height: 26px;
   font-size: 20px;
   font-weight: 400;
@@ -512,12 +545,10 @@ template {
 
 .jumbo .btn-log img {
   margin-right: 10px;
-  vertical-align: middle;
 }
 
 .jumbo small {
   color: #bdb5af;
-  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   padding: 10px;
 }
@@ -525,7 +556,6 @@ template {
 .jumbo a {
   color: black;
   text-decoration: none;
-  font-family: "Montserrat", sans-serif;
   display: block;
   font-size: 13px;
   padding-top: 19px;
@@ -537,7 +567,6 @@ template {
 
 .jumbo a .fa-arrow-right {
   font-size: 10px;
-  vertical-align: middle;
   margin-left: 5px;
 }
 
@@ -593,6 +622,38 @@ template {
 .bunny {
   max-width: 25%;
   padding: 70px;
+}
+
+.feedback .feed-left {
+  max-width: 50%;
+  float: left;
+}
+
+.feedback .feed-left img {
+  max-width: 100%;
+}
+
+.feedback .feed-right {
+  max-width: 50%;
+  float: left;
+}
+
+.get-start .get-start-left {
+  max-width: 50%;
+  float: left;
+}
+
+.get-start .get-start-left img {
+  float: right;
+}
+
+.get-start .get-start-right {
+  max-width: 50%;
+  float: left;
+}
+
+.get-start .get-start-right img {
+  max-width: 100%;
 }
 
 .footer {

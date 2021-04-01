@@ -16120,8 +16120,8 @@ var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebar
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\the_b\Documents\boolean\esercizi\teambit\src\js\app.js */"./src/js/app.js");
-module.exports = __webpack_require__(/*! C:\Users\the_b\Documents\boolean\esercizi\teambit\src\scss\app.scss */"./src/scss/app.scss");
+__webpack_require__(/*! C:\Users\the_b\Documents\boolean\esercizi\teambit.io\src\js\app.js */"./src/js/app.js");
+module.exports = __webpack_require__(/*! C:\Users\the_b\Documents\boolean\esercizi\teambit.io\src\scss\app.scss */"./src/scss/app.scss");
 
 
 /***/ })
