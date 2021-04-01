@@ -1,0 +1,62 @@
+.navbar{
+    @include flex(row, space-between, center);
+    border-bottom: 1px solid $grey;
+    background-color: white;
+    img{
+        max-width: 35px;
+    }
+    h2{
+        @include font-h2;
+    }
+    ul{
+        @include ul-nav-right;
+    }
+    li{
+        @include li;
+        margin-right: 10px;
+        a{
+            color:$text_color;
+            text-decoration: none;
+            @include a-navbar;
+            &:hover{
+                color:$color_hover;
+            }
+        }
+    }
+    .nav-right li{
+        position: relative;
+        padding-right: 20px;
+    }
+    .sub-menu{
+        @include flex(column, flex-start, flex-start);
+        @include absolute;
+        margin-top: 30px;
+        padding: 10px;
+        background: $white;
+        border: 1px solid $orange;
+        box-shadow: 0px 2px 3px rgb(0 0 0 / 20%);
+        z-index: 1;
+        opacity: 0;
+        border-radius: 7px;
+        a{
+            padding: 5px 0;
+        }
+    }
+}
+.container{
+    @extend %container;
+}
+.btn-log{
+    @include a-navbar;
+    @include btn;
+    img {
+        max-width: 14px;
+        @extend %img-align;
+    }
+    &:hover{
+        @include btn-hover($btn_color, $white);
+    }
+}
+.down{
+    vertical-align: bottom;
+}

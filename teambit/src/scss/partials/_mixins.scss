@@ -1,0 +1,52 @@
+@mixin flex( $direction, $justify, $align) {
+    display:flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin font-h2{
+    font-weight: $font_weight_logo;
+    font-size:$font_nav_size;
+}
+@mixin ul-nav-right {
+    padding: 0;
+    margin:0;
+    display: flex;
+    align-items: center;
+}
+@mixin li {
+    list-style-type: none;
+    display: inline-block;
+}
+@mixin a-navbar {
+    font-size:$font_a_size;
+    font-weight: $font_weight_logo;
+}
+@mixin btn {
+    background-color: $white;
+    border: 2px solid $btn_color;
+    border-radius: 7px;
+    padding: 8px 10px;
+}
+@mixin btn-hover($background-color, $color) {
+    background-color: $background-color;
+    color:$color;
+}
+%container{
+    width: 1200px;
+    margin: auto;
+}
+%img-align{
+    vertical-align: middle;
+}
+@mixin absolute {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+@mixin float ($number, $direction){
+    max-width:$number;
+    float: $direction;
+
+}

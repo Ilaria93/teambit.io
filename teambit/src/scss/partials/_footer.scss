@@ -1,0 +1,56 @@
+.footer{
+    margin-top:100px;
+}
+.footer-left{
+    @include float(50%, left);
+    img{
+        max-width: 50px;
+        display: inline-block;
+    }
+    h5{
+        display: inline-block;
+        font-size: 17px;
+        font-weight:$font_weight_title;
+        margin:$ten 0;
+        margin-left: $ten;
+        a{
+            text-decoration: $none;
+            &:hover{
+                color:$color_hover;
+            }
+        }
+    }
+}
+.footer-right{
+    @include float(50%, right);
+    .list{
+        @include flex(row, space-between, flex-start);
+    }
+    .footer-list{
+        float: left;
+        list-style-type: $none;
+        padding: 0;
+        margin: 0;
+        h6{
+            margin: 0;
+            font-weight: $font_weight_logo;
+            font-size: 16px;
+            padding:$ten;
+        }
+        li{
+            font-size: $font_a_size;
+            padding:$ten;
+        }
+        a{
+            color:$black;
+            text-decoration: $none;
+            line-height: 24px;
+            &:hover{
+                color:$color_hover;
+            }
+        }
+    }
+    .last{
+        max-width: 20%;
+    }
+}
